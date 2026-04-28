@@ -1,0 +1,176 @@
+﻿[
+{
+  "title": "完整性/水通量测试",
+  "step": "步骤 2 / 10",
+  "fields": [
+    { "name": "泵2设定速度", "automationId": "ProcessWizard_IntegrityFlux_Pump2SetSpeedInput", "testValue": "500" },
+    { "name": "TMP设定", "automationId": "ProcessWizard_IntegrityFlux_TargetTmpInput", "testValue": "3" },
+    { "name": "阀泵调节切换时间", "automationId": "ProcessWizard_IntegrityFlux_ValvePumpSwitchTimeInput", "testValue": "0" },
+    { "name": "稳定时间", "automationId": "ProcessWizard_IntegrityFlux_StableTimeInput", "testValue": "300" },
+    { "name": "流量合格上限", "automationId": "ProcessWizard_IntegrityFlux_FlowRangeMaxInput", "testValue": "450" },
+    { "name": "流量合格下限", "automationId": "ProcessWizard_IntegrityFlux_FlowRangeMinInput", "testValue": "300" },
+    { "name": "排空判定时间", "automationId": "ProcessWizard_IntegrityFlux_EmptyingJudgmentTimeInput", "testValue": "15" },
+    { "name": "跨膜压稳定范围", "automationId": "ProcessWizard_IntegrityFlux_PowerLimitInput", "testValue": "100" }
+  ]
+},
+
+  {
+  "title": "澄清过滤",
+  "step": "步骤 3 / 10",
+  "fields": [
+    { "name": "3L泵1最大速度", "testValue": "200", "automationId": "ProcessWizard_Clarification_MaxSpeed_3L_PUMP1Input" },
+    { "name": "15L泵1最大速度", "testValue": "100", "automationId": "ProcessWizard_Clarification_MaxSpeed_15L_PUMP1Input" },
+    { "name": "50L泵1最大速度", "testValue": "100", "automationId": "ProcessWizard_Clarification_MaxSpeed_50L_PUMP1Input" },
+    { "name": "LV101气泡检测延时", "testValue": "5", "automationId": "ProcessWizard_Clarification_BubbleDetectDelay_LV101Input" },
+    { "name": "LV102气泡检测延时", "testValue": "5", "automationId": "ProcessWizard_Clarification_BubbleDetectDelay_LV102Input" },
+    { "name": "压力目标", "testValue": "5", "automationId": "ProcessWizard_Clarification_PressureTargetInput" },
+    { "name": "压力上限", "testValue": "14", "automationId": "ProcessWizard_Clarification_PressureUpperLimitInput" },
+    { "name": "压力超限延时", "testValue": "2", "automationId": "ProcessWizard_Clarification_PressureOverLimitDelayInput" },
+    { "name": "LV013气泡检测延时", "testValue": "5", "automationId": "ProcessWizard_Clarification_BubbleDetectDelay_LV013Input" },
+    { "name": "3L中间袋重量", "testValue": "500", "automationId": "ProcessWizard_Clarification_IntermediateBagWeight_3LInput" },
+    { "name": "15L中间袋重量", "testValue": "0", "automationId": "ProcessWizard_Clarification_IntermediateBagWeight_15LInput" },
+    { "name": "50L中间袋重量", "testValue": "0", "automationId": "ProcessWizard_Clarification_IntermediateBagWeight_50LInput" },
+    { "name": "泵1速度下限", "testValue": "30", "automationId": "ProcessWizard_Clarification_PUMP1SpeedLowerLimitInput" },
+    { "name": "泵1低速报警延时", "testValue": "5", "automationId": "ProcessWizard_Clarification_PUMP1LowSpeedAlarmDelayInput" },
+    { "name": "3L袋浓缩启动量", "testValue": "300", "automationId": "ProcessWizard_Clarification_StartingVolume_3LInput" },
+    { "name": "15L袋浓缩启动量", "testValue": "0", "automationId": "ProcessWizard_Clarification_StartingVolume_15LInput" },
+    { "name": "30L袋浓缩启动量", "testValue": "0", "automationId": "ProcessWizard_Clarification_StartingVolume_30LInput" }
+  ]
+},
+
+{
+  "title": "浓缩",
+  "step": "步骤 4 / 10",
+  "fields": [
+    { "name": "浓缩重量设定", "testValue": "300", "automationId": "ProcessWizard_Concentration_ConcentrationWeightSettingInput" },
+    { "name": "排空泵2速度", "testValue": "20", "automationId": "ProcessWizard_Concentration_EmptyingPump2SpeedInput" },
+    { "name": "排空延时", "testValue": "20", "automationId": "ProcessWizard_Concentration_EmptyingDelayTimeInput" },
+
+    { "name": "泵2出口压力上限", "testValue": "14", "automationId": "ProcessWizard_Concentration_PUMP2OutletPressureUpperLimitInput" },
+    { "name": "TMP设定", "testValue": "3", "automationId": "ProcessWizard_Concentration_TransMembranePressureSetpointInput" },
+    { "name": "气泡传感器报警延时", "testValue": "15", "automationId": "ProcessWizard_Concentration_BubbleSensorAlarmDelayTimeInput" },
+    { "name": "3L中间袋起始重量", "testValue": "200", "automationId": "ProcessWizard_Concentration_IntermediateBagStartWeight_3LInput" },
+    { "name": "15L中间袋起始重量", "testValue": "3000", "automationId": "ProcessWizard_Concentration_IntermediateBagStartWeight_15LInput" },
+    { "name": "50L中间袋起始重量", "testValue": "15000", "automationId": "ProcessWizard_Concentration_IntermediateBagStartWeight_50LInput" },
+    { "name": "3L中间袋收获重量", "testValue": "100", "automationId": "ProcessWizard_Concentration_IntermediateBagHarvestWeight_3LInput" },
+    { "name": "15L中间袋收获重量", "testValue": "500", "automationId": "ProcessWizard_Concentration_IntermediateBagHarvestWeight_15LInput" },
+    { "name": "50L中间袋收获重量", "testValue": "500", "automationId": "ProcessWizard_Concentration_IntermediateBagHarvestWeight_50LInput" }
+  ]
+},
+
+{
+  "title": "置换",
+  "step": "步骤 5 / 10",
+  "fields": [
+    { "name": "置换模式", "testValue": "", "automationId": "ProcessWizard_Diafiltration_ContinuousRadio" },
+    { "name": "置换次数", "testValue": "5", "automationId": "ProcessWizard_Diafiltration_NumberOfDiafiltrationCyclesInput" },
+    { "name": "LV101气泡检测延时", "testValue": "5", "automationId": "ProcessWizard_Diafiltration_BubbleDetectDelay_LV101Input" },
+    { "name": "LV102气泡检测延时", "testValue": "5", "automationId": "ProcessWizard_Diafiltration_BubbleDetectDelay_LV102Input" },
+    { "name": "压力目标", "testValue": "7", "automationId": "ProcessWizard_Diafiltration_PressureTargetInput" },
+    { "name": "压力限值", "testValue": "14", "automationId": "ProcessWizard_Diafiltration_PressureLimitInput" },
+    { "name": "压力超限延时", "testValue": "15", "automationId": "ProcessWizard_Diafiltration_PressureOverLimitDelayInput" },
+    { "name": "LV103气泡检测延时", "testValue": "15", "automationId": "ProcessWizard_Diafiltration_BubbleDetectDelay_LV103Input" },
+    { "name": "3L泵1最大转速", "testValue": "200", "automationId": "ProcessWizard_Diafiltration_DiafiltrationPump1MaxSpeed_3LInput" },
+    { "name": "15L泵1最大转速", "testValue": "500", "automationId": "ProcessWizard_Diafiltration_DiafiltrationPump1MaxSpeed_15LInput" },
+    { "name": "50L泵1最大转速", "testValue": "500", "automationId": "ProcessWizard_Diafiltration_DiafiltrationPump1MaxSpeed_50LInput" },
+    { "name": "3L中间产品装重量设定", "testValue": "220", "automationId": "ProcessWizard_Diafiltration_IntermediateProductBagWeight_3LInput" },
+    { "name": "15L中间产品装重量设定", "testValue": "1000", "automationId": "ProcessWizard_Diafiltration_IntermediateProductBagWeight_15LInput" },
+    { "name": "50L中间产品装重量设定", "testValue": "3000", "automationId": "ProcessWizard_Diafiltration_IntermediateProductBagWeight_50LInput" },
+    { "name": "泵1速度下限", "testValue": "20", "automationId": "ProcessWizard_Diafiltration_PUMP1SpeedLowerLimitInput" },
+    { "name": "泵1低速报警延时", "testValue": "10", "automationId": "ProcessWizard_Diafiltration_PUMP1LowSpeedAlarmDelayInput" },
+    { "name": "3L中间产品袋重量上限", "testValue": "500", "automationId": "ProcessWizard_Diafiltration_WeightUpperLimit_3LInput" },
+    { "name": "15L中间产品袋重量上限", "testValue": "0", "automationId": "ProcessWizard_Diafiltration_WeightUpperLimit_15LInput" },
+    { "name": "30L中间产品袋重量上限", "testValue": "0", "automationId": "ProcessWizard_Diafiltration_WeightUpperLimit_30LInput" }
+  ]
+},
+
+{
+  "title": "收获成品",
+  "step": "步骤 6 / 10",
+  "fields": [
+    { "name": "LV105气泡检测延时", "testValue": "5", "automationId": "ProcessWizard_Harvest_BubbleDetectDelay_LV105Input" },
+    { "name": "压力目标", "testValue": "5", "automationId": "ProcessWizard_Harvest_PressureTargetInput" },
+    { "name": "压力限值", "testValue": "15", "automationId": "ProcessWizard_Harvest_PressureLimitInput" },
+    { "name": "压力超限延时", "testValue": "5", "automationId": "ProcessWizard_Harvest_PressureOverLimitDelayInput" },
+    { "name": "3L收获泵2速度", "testValue": "200", "automationId": "ProcessWizard_Harvest_HarvestPump2Speed_3LInput" },
+    { "name": "15L收获泵2速度", "testValue": "300", "automationId": "ProcessWizard_Harvest_HarvestPump2Speed_15LInput" },
+    { "name": "50L收获泵2速度", "testValue": "400", "automationId": "ProcessWizard_Harvest_HarvestPump2Speed_50LInput" },
+    { "name": "泵2速度下限", "testValue": "20", "automationId": "ProcessWizard_Harvest_PUMP2SpeedLowerLimitInput" },
+    { "name": "泵2低速报警延时", "testValue": "5", "automationId": "ProcessWizard_Harvest_PUMP2LowSpeedAlarmDelayInput" }
+  ]
+},
+
+{
+  "title": "水洗",
+  "step": "步骤 7 / 10",
+  "fields": [
+    { "name": "清洗泵2速度", "testValue": "600", "automationId": "ProcessWizard_WaterWashParams_CleaningPump2SpeedInput" },
+    { "name": "运行时间", "testValue": "300", "automationId": "ProcessWizard_WaterWashParams_CleaningRunningTimeInput" },
+    { "name": "清洗透出时间", "testValue": "300", "automationId": "ProcessWizard_WaterWashParams_CleaningPermeationTimeInput" },
+    { "name": "TMP设定", "testValue": "5", "automationId": "ProcessWizard_WaterWashParams_TransMembranePressureSetpointInput" },
+    { "name": "压力限值", "testValue": "14", "automationId": "ProcessWizard_WaterWashParams_PressureLimitInput" },
+    { "name": "压力超限延时", "testValue": "20", "automationId": "ProcessWizard_WaterWashParams_PressureOverLimitDelayInput" },
+    { "name": "清洗排空气泡延时", "testValue": "15", "automationId": "ProcessWizard_WaterWashParams_CleaningBubbleDischargeDelayInput" },
+    { "name": "清洗泵2速度下限", "testValue": "100", "automationId": "ProcessWizard_WaterWashParams_CleaningPump2SpeedLowerLimitInput" },
+    { "name": "泵2速度下限延时", "testValue": "20", "automationId": "ProcessWizard_WaterWashParams_CleaningPump2SpeedLowerLimitDelayInput" },
+    { "name": "跨膜压泵2速度", "testValue": "500", "automationId": "ProcessWizard_WaterWashParams_Pump2SpeedInput" },
+    { "name": "比例阀开度", "testValue": "93", "automationId": "ProcessWizard_WaterWashParams_ProportionalOpeningInput" }
+  ]
+},
+
+{
+  "title": "碱洗",
+  "step": "步骤 8 / 10",
+  "fields": [
+    { "name": "清洗泵2速度", "testValue": "600", "automationId": "ProcessWizard_AlkaliWashParams_CleaningPump2SpeedInput" },
+    { "name": "运行时间", "testValue": "300", "automationId": "ProcessWizard_AlkaliWashParams_CleaningRunningTimeInput" },
+    { "name": "清洗透出时间", "testValue": "300", "automationId": "ProcessWizard_AlkaliWashParams_CleaningPermeationTimeInput" },
+    { "name": "TMP设定", "testValue": "5", "automationId": "ProcessWizard_AlkaliWashParams_TransMembranePressureSetpointInput" },
+    { "name": "压力限值", "testValue": "14", "automationId": "ProcessWizard_AlkaliWashParams_PressureLimitInput" },
+    { "name": "压力超限延时", "testValue": "20", "automationId": "ProcessWizard_AlkaliWashParams_PressureOverLimitDelayInput" },
+    { "name": "清洗排空气泡延时", "testValue": "15", "automationId": "ProcessWizard_AlkaliWashParams_CleaningBubbleDischargeDelayInput" },
+    { "name": "清洗泵2速度下限", "testValue": "100", "automationId": "ProcessWizard_AlkaliWashParams_CleaningPump2SpeedLowerLimitInput" },
+    { "name": "泵2速度下限延时", "testValue": "20", "automationId": "ProcessWizard_AlkaliWashParams_CleaningPump2SpeedLowerLimitDelayInput" },
+    { "name": "跨膜压泵2速度", "testValue": "500", "automationId": "ProcessWizard_AlkaliWashParams_Pump2SpeedInput" },
+    { "name": "比例阀开度", "testValue": "93", "automationId": "ProcessWizard_AlkaliWashParams_ProportionalOpeningInput" }
+  ]
+},
+
+{
+  "title": "二次水洗",
+  "step": "步骤 9 / 10",
+  "fields": [
+    { "name": "清洗泵2速度", "testValue": "600", "automationId": "ProcessWizard_SecondWaterWashParams_CleaningPump2SpeedInput" },
+    { "name": "运行时间", "testValue": "300", "automationId": "ProcessWizard_SecondWaterWashParams_CleaningRunningTimeInput" },
+    { "name": "清洗透出时间", "testValue": "300", "automationId": "ProcessWizard_SecondWaterWashParams_CleaningPermeationTimeInput" },
+    { "name": "TMP设定", "testValue": "5", "automationId": "ProcessWizard_SecondWaterWashParams_TransMembranePressureSetpointInput" },
+    { "name": "压力限值", "testValue": "14", "automationId": "ProcessWizard_SecondWaterWashParams_PressureLimitInput" },
+    { "name": "压力超限延时", "testValue": "20", "automationId": "ProcessWizard_SecondWaterWashParams_PressureOverLimitDelayInput" },
+    { "name": "清洗排空气泡延时", "testValue": "15", "automationId": "ProcessWizard_SecondWaterWashParams_CleaningBubbleDischargeDelayInput" },
+    { "name": "清洗泵2速度下限", "testValue": "100", "automationId": "ProcessWizard_SecondWaterWashParams_CleaningPump2SpeedLowerLimitInput" },
+    { "name": "泵2速度下限延时", "testValue": "20", "automationId": "ProcessWizard_SecondWaterWashParams_CleaningPump2SpeedLowerLimitDelayInput" },
+    { "name": "跨膜压泵2速度", "testValue": "500", "automationId": "ProcessWizard_SecondWaterWashParams_Pump2SpeedInput" },
+    { "name": "比例阀开度", "testValue": "93", "automationId": "ProcessWizard_SecondWaterWashParams_ProportionalOpeningInput" }
+  ]
+},
+
+{
+  "title": "碱保存",
+  "step": "步骤 10 / 10",
+  "fields": [
+    { "name": "清洗泵2速度", "testValue": "600", "automationId": "ProcessWizard_AlkaliPreservationParams_CleaningPump2SpeedInput" },
+    { "name": "运行时间", "testValue": "300", "automationId": "ProcessWizard_AlkaliPreservationParams_CleaningRunningTimeInput" },
+    { "name": "清洗透出时间", "testValue": "300", "automationId": "ProcessWizard_AlkaliPreservationParams_CleaningPermeationTimeInput" },
+    { "name": "TMP设定", "testValue": "5", "automationId": "ProcessWizard_AlkaliPreservationParams_TransMembranePressureSetpointInput" },
+    { "name": "压力限值", "testValue": "14", "automationId": "ProcessWizard_AlkaliPreservationParams_PressureLimitInput" },
+    { "name": "压力超限延时", "testValue": "20", "automationId": "ProcessWizard_AlkaliPreservationParams_PressureOverLimitDelayInput" },
+    { "name": "清洗排空气泡延时", "testValue": "15", "automationId": "ProcessWizard_AlkaliPreservationParams_CleaningBubbleDischargeDelayInput" },
+    { "name": "清洗泵2速度下限", "testValue": "100", "automationId": "ProcessWizard_AlkaliPreservationParams_CleaningPump2SpeedLowerLimitInput" },
+    { "name": "泵2速度下限延时", "testValue": "20", "automationId": "ProcessWizard_AlkaliPreservationParams_CleaningPump2SpeedLowerLimitDelayInput" },
+    { "name": "跨膜压泵2速度", "testValue": "500", "automationId": "ProcessWizard_AlkaliPreservationParams_Pump2SpeedInput" },
+    { "name": "比例阀开度", "testValue": "93", "automationId": "ProcessWizard_AlkaliPreservationParams_ProportionalOpeningInput" }
+  ]
+},
+
+
+]
